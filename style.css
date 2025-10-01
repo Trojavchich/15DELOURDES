@@ -45,7 +45,7 @@ body {
 }
 
 .photo-container img {
-  width: 400%;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
@@ -196,6 +196,7 @@ body {
     width: 85%;
   }
 }
+
 
 
 
