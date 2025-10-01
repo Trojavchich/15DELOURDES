@@ -47,6 +47,7 @@ body {
 .photo-container img {
   width: 100%;
   height: auto;
+  max-width: 500px; /* límite para que no se haga gigante */
   border-radius: 12px;
   object-fit: cover;
 }
@@ -163,10 +164,13 @@ body {
 
 /* Mapa */
 .map-section iframe {
-  width: 300%;
+  width: 100% !important;
   height: 350px;
   border-radius: 12px;
+  border: none;
 }
+
+/* ====== RESPONSIVE ====== */
 
 /* Celulares */
 @media (max-width: 600px) {
@@ -175,8 +179,9 @@ body {
     padding: 10px;
   }
   .invitation-card {
-    width: 500%;
+    width: 95%;
     padding: 20px;
+    margin: 20px auto;
   }
   .header h1 {
     font-size: 2rem;
@@ -196,10 +201,3 @@ body {
     width: 85%;
   }
 }
-
-
-
-
-
-
-
