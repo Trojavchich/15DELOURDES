@@ -1,145 +1,84 @@
-/* Importar fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   background: #fdfcf9;
-  color: #4a3f35;
+  color: #3e3e3e;
   text-align: center;
   line-height: 1.6;
 }
 
-/* ---------- Invitación Card ---------- */
+/* Contenedor principal */
 .invitation-card {
   max-width: 600px;
-  margin: 50px auto;
-  padding: 35px;
-  background: #fffdfa;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  border: 1px solid #e6dacb;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.invitation-card h1,
-.invitation-card h2,
+/* Título principal */
+.invitation-card h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+/* Subtítulos */
+.invitation-card h2, 
 .invitation-card h3 {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color: #3a2f2f;
-  margin-bottom: 15px;
-}
-
-/* ---------- Sección sugerir canción ---------- */
-.song-suggestion {
-  margin-top: 40px;
-  padding: 25px;
-}
-
-.song-suggestion img {
-  width: 50px;
-  margin-bottom: 15px;
-}
-
-.song-suggestion p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #5a4e46;
-}
-
-.song-suggestion a {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 28px;
-  border-radius: 10px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  font-size: 1.3rem;
+  margin: 15px 0;
+  color: #444;
 }
 
-.song-suggestion a:hover {
-  background: #333;
-  transform: translateY(-2px);
-}
-
-/* ---------- Formulario Confirmar Asistencia ---------- */
-.form-container {
-  margin-top: 45px;
-  padding: 25px;
-  background: #faf6f0;
-  border-radius: 18px;
-  border: 1px solid #e6dacb;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  text-align: center;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form-container h3 {
-  margin-bottom: 18px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #4a3f35;
+/* Texto */
+.invitation-card p {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #555;
 }
 
-#rsvpForm input,
-#rsvpForm textarea {
-  width: 100%;
-  padding: 14px 16px;
-  margin: 12px 0;
-  border-radius: 12px;
-  border: 1px solid #d1c7be;
-  font-family: 'Montserrat', sans-serif;
+/* Destacar ítems */
+.invitation-card .highlight {
+  color: #d2691e;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Inputs */
+.invitation-card input,
+.invitation-card textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   font-size: 1rem;
-  outline: none;
-  transition: border 0.3s, box-shadow 0.3s;
-  box-sizing: border-box;
-}
-
-#rsvpForm input:focus,
-#rsvpForm textarea:focus {
-  border-color: #8d7d72;
-  box-shadow: 0 0 8px rgba(141, 125, 114, 0.3);
+  font-family: 'Playfair Display', serif;
 }
 
 /* Botón */
-#rsvpForm button {
-  display: inline-block;
-  margin-top: 18px;
-  background: linear-gradient(135deg, #5c504a, #8d7d72);
+.invitation-card button {
+  background: #7a4de3;
   color: #fff;
-  padding: 14px 35px;
-  border-radius: 30px;
-  font-size: 1.05rem;
-  font-weight: 600;
+  padding: 12px 25px;
   border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  font-family: 'Playfair Display', serif;
 }
 
-#rsvpForm button:hover {
-  background: linear-gradient(135deg, #3f3f3f, #5c504a);
-  transform: scale(1.05);
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-  .invitation-card, 
-  .form-container {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .song-suggestion a,
-  #rsvpForm button {
-    width: 100%;
-  }
+.invitation-card button:hover {
+  background: #5d37b0;
 }
