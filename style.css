@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
 
 * {
   margin: 0;
@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Dancing Script', cursive;
   background: #fdfcf9;
-  color: #6b6867;
+  color: #4a3f3f;
   text-align: center;
   padding: 20px;
 }
@@ -27,11 +27,10 @@ body {
 
 /* Texto principal */
 .invitation-card p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 12px 0;
-  font-family: 'Great Vibes', cursive;
-  color: #5b4a43;
+  font-size: 1.3rem;
+  line-height: 2;
+  margin: 15px 0;
+  font-weight: 400;
 }
 
 /* Bloque de fecha */
@@ -39,20 +38,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px 0;
-  font-family: 'Playfair Display', serif;
+  margin: 30px 0;
 }
 
 .date-container .day-name,
-.date-container .time {
-  font-size: 1rem;
-  text-transform: uppercase;
+.date-container .month-year {
+  font-size: 1.3rem;
   margin: 0 15px;
-  letter-spacing: 1px;
 }
 
 .date-container .date {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: 0 20px;
 }
@@ -62,17 +58,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 1rem;
-  color: #444;
+  font-size: 1.3rem;
+  margin-left: 20px;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
   .invitation-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .date-container .date {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -85,6 +81,6 @@ body {
     gap: 10px;
   }
   .date-container .date {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
