@@ -48,13 +48,18 @@ p, label {
 /* Formulario */
 input, textarea {
   width: 92%;
+  max-width: 400px;         /* limita ancho en pantallas grandes */
   padding: 12px;
   margin: 10px 0;
   border-radius: 10px;
   border: 1px solid #c5c3c3;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Great Vibes', cursive; /* cursiva en inputs también */
   font-size: 1rem;
   resize: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;       /* texto centrado dentro del input */
 }
 
 button {
@@ -67,10 +72,36 @@ button {
   cursor: pointer;
   font-family: 'Great Vibes', cursive;
   transition: 0.3s ease;
+  display: block;
+  margin: 15px auto 0 auto; /* centrado en móvil */
 }
 
 button:hover {
   background: #7a526d;
 }
 
+/* Responsive: ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
 
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p, label {
+    font-size: 1.1rem;
+  }
+
+  input, textarea {
+    width: 95%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  button {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+}
