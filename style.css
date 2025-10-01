@@ -48,13 +48,16 @@ p, label {
 /* Formulario */
 input, textarea {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;       /* reduce ancho para que no se vea corrido */
   padding: 10px;
-  margin: 8px auto;
+  margin: 10px auto;      /* centrado automático y un poquito más de espacio */
+  display: block;          /* asegura que esté en columna y centrado */
   border: 1px solid #ccc;
   border-radius: 8px;
   font-family: 'Great Vibes', cursive;
   font-size: 1.2rem;
+  text-align: center;      /* centra el texto dentro del input */
+  box-sizing: border-box;  /* para que padding no rompa el ancho */
 }
 
 button {
@@ -72,3 +75,4 @@ button {
 button:hover {
   background: #7a526d;
 }
+
