@@ -163,13 +163,13 @@ body {
 
 /* Mapa */
 .map-section iframe {
-  width: 100%;
+  width: 300%;
   height: 350px;
   border-radius: 12px;
 }
 
 /* Celulares */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   body {
     font-size: 14px;
     padding: 10px;
@@ -196,6 +196,7 @@ body {
     width: 85%;
   }
 }
+
 
 
 
