@@ -34,7 +34,7 @@ document.getElementById("rsvpForm").addEventListener("submit", function(e) {
   const alergias = document.getElementById("alergias").value;
 
   // Número de WhatsApp de destino (ejemplo con código de país +54 Argentina)
-  const phone = "5491131624731"; // 👈 reemplazá con tu número real
+  const phone = "5491153267923"; // 👈 reemplazá con tu número real
 
   const mensaje = `Hola! Soy ${nombre}. Confirmo mi asistencia a los 15 🎉%0A${
     alergias ? "Tema alimenticio: " + alergias : "Sin restricciones alimenticias"
@@ -43,4 +43,5 @@ document.getElementById("rsvpForm").addEventListener("submit", function(e) {
   const url = `https://wa.me/${phone}?text=${mensaje}`;
 
   window.open(url, "_blank");
+
 });
