@@ -11,7 +11,7 @@ body {
   background: #fdfcf9;
   color: #6b6867;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 /* Tarjeta */
@@ -19,9 +19,9 @@ body {
   max-width: 600px;
   margin: 20px auto;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border: 2px solid #f1e7d0;
 }
 
@@ -50,12 +50,12 @@ form {
 }
 
 input, textarea {
-  width: 100%;
-  max-width: 100%;
+  width: 100%;              /* ahora ocupa todo el ancho disponible */
+  max-width: 100%;          /* evita desbordes */
   padding: 12px;
   margin: 8px 0;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 1rem;
 }
 
@@ -65,11 +65,11 @@ button {
   color: white;
   border: none;
   padding: 12px 20px;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
   margin-top: 10px;
-  width: 100%;
+  width: 100%;               /* botón full width en móvil */
 }
 
 button:hover {
@@ -78,16 +78,16 @@ button:hover {
 
 /* Imagen */
 img {
-  max-width: 100%;
+  max-width: 100%;           /* ya no queda fija en 300px */
   height: auto;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
-/* Google Maps */
+/* Google Maps responsive */
 .map-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;   /* Proporción 16:9 */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -103,30 +103,23 @@ img {
   border: 0;
 }
 
-/* Responsive ajustes */
+/* Media Queries para ajustar tipografía */
 @media (max-width: 768px) {
   .invitation-card h1 {
     font-size: 1.5rem;
   }
-
   .invitation-card p {
     font-size: 0.95rem;
   }
-
   .countdown {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-
   .invitation-card {
     padding: 15px;
   }
-
   .invitation-card h1 {
     font-size: 1.3rem;
   }
