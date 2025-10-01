@@ -1,203 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
 
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
   background: #fdfcf9;
-  color: #4d4b4a;
+  color: #6b6867;
   text-align: center;
-  line-height: 1.6;
+  padding: 20px;
 }
 
 /* Tarjeta */
 .invitation-card {
-  background: #fffdf9;
-  margin: 40px auto;
-  padding: 40px;
-  max-width: 700px;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  border: 10px solid #e6dacb;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 2px solid #f1e7d0;
 }
 
-/* Encabezado */
-.header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+.invitation-card h1 {
+  font-size: 1.8rem;
+  color: #444;
   margin-bottom: 10px;
-  color: #5c504a;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.1);
 }
 
-.header h2 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-top: 5px;
-  color: #7b665c;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Foto */
-.photo-container {
-  margin: 30px auto;
-  max-width: 100%;
-}
-
-.photo-container img {
-  width: 100%;
-  height: auto;
-  max-width: 500px; /* límite para que no se haga gigante */
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-/* Detalles */
-.details p {
-  font-size: 1.15rem;
-  margin: 12px 0;
-}
-
-.dresscode {
-  font-style: italic;
-  color: #9b1c1c;
+.invitation-card p {
   font-size: 1rem;
+  margin: 8px 0;
 }
 
-/* Cuenta regresiva */
+/* Contador */
 .countdown {
-  margin: 25px 0;
-}
-
-.countdown h3 {
-  font-size: 1.6rem;
-  margin-bottom: 12px;
-  font-family: 'Playfair Display', serif;
-  color: #5c504a;
-}
-
-#timer {
-  font-size: 1.9rem;
   font-weight: bold;
+  font-size: 1.2rem;
   color: #d97706;
-  display: inline-block;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  margin: 15px 0;
 }
 
-/* Mensaje */
-.message {
-  margin: 25px auto;
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #6d625f;
-  max-width: 520px;
+/* Inputs */
+form {
+  margin-top: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
 }
 
 /* Botón */
-.btn-confirm {
-  display: inline-block;
-  margin: 25px auto;
-  background: linear-gradient(135deg, #5c504a, #8d7d72);
-  color: #fff;
-  text-decoration: none;
-  padding: 14px 32px;
-  border-radius: 30px;
-  font-size: 1.05rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.btn-confirm:hover {
-  background: linear-gradient(135deg, #3f3f3f, #494949);
-  transform: scale(1.05);
-}
-
-/* Formulario */
-.form-container {
-  margin-top: 35px;
-  padding: 25px;
-  background: #faf6f0;
-  border-radius: 18px;
-  border: 1px solid #e6dacb;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.form-container h3 {
-  margin-bottom: 18px;
-  font-size: 1.4rem;
-  color: #5c504a;
-  font-family: 'Playfair Display', serif;
-}
-
-#rsvpForm input,
-#rsvpForm textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #c5c3c3;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  resize: none;
-}
-
-#rsvpForm button {
-  display: inline-block;
-  margin-top: 18px;
-  background: linear-gradient(135deg, #5c504a, #8d7d72);
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 600;
+button {
+  background: #8b5cf6;
+  color: white;
   border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-}
-
-#rsvpForm button:hover {
-  background: linear-gradient(135deg, #7b665c, #5c504a);
-  transform: scale(1.04);
-}
-
-/* Mapa */
-.map-section iframe {
-  width: 100% !important;
-  height: 350px;
+  padding: 12px 20px;
   border-radius: 12px;
-  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%;
 }
 
-/* ====== RESPONSIVE ====== */
+button:hover {
+  background: #6d28d9;
+}
 
-/* Celulares */
-@media (max-width: 600px) {
+/* Imagen */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Google Maps */
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .invitation-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .invitation-card p {
+    font-size: 0.95rem;
+  }
+
+  .countdown {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
   body {
-    font-size: 14px;
     padding: 10px;
   }
-  .invitation-card {
-    width: 95%;
-    padding: 20px;
-    margin: 20px auto;
-  }
-  .header h1 {
-    font-size: 2rem;
-  }
-  #timer {
-    font-size: 1.4rem;
-  }
-  .btn-confirm {
-    font-size: 0.95rem;
-    padding: 12px 24px;
-  }
-}
 
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
   .invitation-card {
-    width: 85%;
+    padding: 15px;
+  }
+
+  .invitation-card h1 {
+    font-size: 1.3rem;
   }
 }
