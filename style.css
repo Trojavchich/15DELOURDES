@@ -47,17 +47,14 @@ p, label {
 
 /* Formulario */
 input, textarea {
-  width: 100%;
-  max-width: 300px;       /* reduce ancho para que no se vea corrido */
-  padding: 10px;
-  margin: 10px auto;      /* centrado automático y un poquito más de espacio */
-  display: block;          /* asegura que esté en columna y centrado */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.2rem;
-  text-align: center;      /* centra el texto dentro del input */
-  box-sizing: border-box;  /* para que padding no rompa el ancho */
+  width: 92%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #c5c3c3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  resize: none;
 }
 
 button {
@@ -75,4 +72,5 @@ button {
 button:hover {
   background: #7a526d;
 }
+
 
