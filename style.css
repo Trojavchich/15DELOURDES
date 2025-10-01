@@ -45,14 +45,21 @@ p, label {
   margin: 20px 0;
 }
 
-/* Formulario centrado y móvil-friendly */
-.cursive-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
-  width: 100%;
+input, textarea {
+  width: 92%;
+  max-width: 400px;         /* limita ancho en pantallas grandes */
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #c5c3c3;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Great Vibes', cursive; /* cursiva en inputs también */
+  font-size: 1rem;
+  resize: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;       /* texto centrado dentro del input */
 }
 
 .cursive-form input,
@@ -113,3 +120,4 @@ p, label {
     font-size: 1.1rem;
   }
 }
+
