@@ -45,42 +45,49 @@ p, label {
   margin: 20px 0;
 }
 
-/* Formulario */
-input, textarea {
-  width: 92%;
-  max-width: 400px;         /* limita ancho en pantallas grandes */
+/* Formulario centrado y móvil-friendly */
+.cursive-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.cursive-form input,
+.cursive-form textarea {
+  width: 90%;              /* se ajusta al ancho del móvil */
+  max-width: 350px;        /* no se estira en pantallas grandes */
   padding: 12px;
-  margin: 10px 0;
   border-radius: 10px;
   border: 1px solid #c5c3c3;
-  font-family: 'Great Vibes', cursive; /* cursiva en inputs también */
-  font-size: 1rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.2rem;
+  text-align: center;
   resize: none;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;       /* texto centrado dentro del input */
 }
 
-button {
+.cursive-form button {
+  width: 60%;
+  max-width: 250px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
   background: #9c6b89;
   color: #fff;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  cursor: pointer;
   font-family: 'Great Vibes', cursive;
+  font-size: 1.2rem;
+  cursor: pointer;
   transition: 0.3s ease;
-  display: block;
-  margin: 15px auto 0 auto; /* centrado en móvil */
 }
 
-button:hover {
+.cursive-form button:hover {
   background: #7a526d;
 }
 
-/* Responsive: ajustes para pantallas pequeñas */
+/* Responsive para pantallas muy pequeñas */
 @media (max-width: 480px) {
   h1, h2 {
     font-size: 2rem;
@@ -94,13 +101,14 @@ button:hover {
     font-size: 1.1rem;
   }
 
-  input, textarea {
+  .cursive-form input,
+  .cursive-form textarea {
     width: 95%;
     font-size: 1rem;
     padding: 10px;
   }
 
-  button {
+  .cursive-form button {
     width: 80%;
     font-size: 1.1rem;
   }
