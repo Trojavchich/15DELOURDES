@@ -159,3 +159,23 @@ body {
   background: linear-gradient(135deg, #7b665c, #5c504a);
   transform: scale(1.04);
 }
+/* Celulares */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .invitation-card {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .invitation-card {
+    width: 80%;
+  }
+}
+
+
