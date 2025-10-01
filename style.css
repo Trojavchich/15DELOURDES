@@ -1,97 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap');
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@400;500;600&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background: #fdfcf9;
-  color: #4d4b4a;
+  color: #4a3f35;
   text-align: center;
   line-height: 1.6;
 }
 
-/* Tarjeta principal */
+/* ---------- Invitación Card ---------- */
 .invitation-card {
-  background: #fffdf9;
-  margin: 40px auto;
-  padding: 40px;
-  max-width: 700px;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  border: 10px solid #e6dacb;
-}
-
-/* Encabezado */
-.header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #5c504a;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.1);
-}
-
-.header p {
-  font-size: 1.2rem;
-  color: #7b665c;
-  margin-top: 5px;
-}
-
-/* Foto */
-.photo-container {
-  margin: 30px 0;
-}
-
-.photo-container img {
-  width: 100%;
   max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 50px auto;
+  padding: 35px;
+  background: #fffdfa;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid #e6dacb;
 }
 
-/* Detalles */
-.details p {
-  font-size: 1.15rem;
-  margin: 12px 0;
-}
-
-.dresscode-note {
-  font-style: italic;
-  color: #9b1c1c;
-  font-size: 1rem;
-}
-
-/* Cuenta regresiva */
-.countdown {
-  margin: 25px 0;
-}
-
-.countdown h3 {
-  font-size: 1.6rem;
-  margin-bottom: 12px;
+.invitation-card h1,
+.invitation-card h2,
+.invitation-card h3 {
   font-family: 'Playfair Display', serif;
-  color: #5c504a;
-}
-
-#timer {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: #d97706;
-  display: inline-block;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
-}
-
-/* Mensaje */
-.message {
-  margin: 25px auto;
   font-style: italic;
-  font-size: 1.2rem;
-  color: #6d625f;
-  max-width: 520px;
+  color: #3a2f2f;
+  margin-bottom: 15px;
 }
 
-/* Formulario */
+/* ---------- Sección sugerir canción ---------- */
+.song-suggestion {
+  margin-top: 40px;
+  padding: 25px;
+}
+
+.song-suggestion img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.song-suggestion p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #5a4e46;
+}
+
+.song-suggestion a {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.song-suggestion a:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* ---------- Formulario Confirmar Asistencia ---------- */
 .form-container {
-  margin-top: 35px;
+  margin-top: 45px;
   padding: 25px;
   background: #faf6f0;
   border-radius: 18px;
@@ -109,6 +85,7 @@ body {
   font-weight: 600;
   color: #4a3f35;
   font-family: 'Playfair Display', serif;
+  font-style: italic;
   text-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
@@ -132,11 +109,11 @@ body {
   box-shadow: 0 0 8px rgba(141, 125, 114, 0.3);
 }
 
-/* Botón de confirmación */
+/* Botón */
 #rsvpForm button {
   display: inline-block;
   margin-top: 18px;
-  background: #25D366; /* Verde WhatsApp */
+  background: linear-gradient(135deg, #5c504a, #8d7d72);
   color: #fff;
   padding: 14px 35px;
   border-radius: 30px;
@@ -149,76 +126,20 @@ body {
 }
 
 #rsvpForm button:hover {
-  background: #1ebe5a;
+  background: linear-gradient(135deg, #3f3f3f, #5c504a);
   transform: scale(1.05);
 }
 
-/* Sección de sugerir canción */
-.suggestion-card {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #fff;
-  border-radius: 16px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border: 2px solid #f1e7d0;
-  text-align: center;
-}
-
-.suggestion-card .icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.suggestion-card h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-  color: #333;
-  font-family: 'Playfair Display', serif;
-}
-
-.suggestion-card p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #555;
-}
-
-.btn-suggest {
-  display: inline-block;
-  background: black;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.btn-suggest:hover {
-  background: #333;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-    padding: 10px;
-  }
-  .invitation-card,
-  .form-container,
-  .suggestion-card {
-    width: 100%;
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .invitation-card, 
+  .form-container {
+    margin: 20px;
     padding: 20px;
   }
+
+  .song-suggestion a,
   #rsvpForm button {
     width: 100%;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .invitation-card,
-  .form-container,
-  .suggestion-card {
-    width: 80%;
   }
 }
