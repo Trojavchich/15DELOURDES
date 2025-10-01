@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
 
 * {
   margin: 0;
@@ -11,116 +11,80 @@ body {
   background: #fdfcf9;
   color: #6b6867;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }
 
 /* Tarjeta */
 .invitation-card {
-  max-width: 600px;
-  margin: 20px auto;
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fffaf5;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   border: 2px solid #f1e7d0;
 }
 
-.invitation-card h1 {
-  font-size: 1.8rem;
-  color: #444;
-  margin-bottom: 10px;
-}
-
+/* Texto principal */
 .invitation-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 12px 0;
+  font-family: 'Great Vibes', cursive;
+  color: #5b4a43;
+}
+
+/* Bloque de fecha */
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.date-container .day-name,
+.date-container .time {
   font-size: 1rem;
-  margin: 8px 0;
+  text-transform: uppercase;
+  margin: 0 15px;
+  letter-spacing: 1px;
 }
 
-/* Contador */
-.countdown {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #d97706;
-  margin: 15px 0;
+.date-container .date {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0 20px;
 }
 
-/* Inputs */
-form {
-  margin-top: 15px;
-}
-
-input, textarea {
-  width: 100%;              /* ahora ocupa todo el ancho disponible */
-  max-width: 100%;          /* evita desbordes */
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+/* Hora */
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 1rem;
+  color: #444;
 }
 
-/* Botón */
-button {
-  background: #8b5cf6;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
-  width: 100%;               /* botón full width en móvil */
-}
-
-button:hover {
-  background: #6d28d9;
-}
-
-/* Imagen */
-img {
-  max-width: 100%;           /* ya no queda fija en 300px */
-  height: auto;
-  border-radius: 10px;
-  margin: 15px 0;
-}
-
-/* Google Maps responsive */
-.map-container {
-  position: relative;
-  padding-bottom: 56.25%;   /* Proporción 16:9 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-top: 20px;
-}
-
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Media Queries para ajustar tipografía */
+/* Media Queries */
 @media (max-width: 768px) {
-  .invitation-card h1 {
-    font-size: 1.5rem;
-  }
   .invitation-card p {
-    font-size: 0.95rem;
-  }
-  .countdown {
     font-size: 1rem;
+  }
+  .date-container .date {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .invitation-card {
-    padding: 15px;
+    padding: 20px 15px;
   }
-  .invitation-card h1 {
-    font-size: 1.3rem;
+  .date-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .date-container .date {
+    font-size: 2rem;
   }
 }
