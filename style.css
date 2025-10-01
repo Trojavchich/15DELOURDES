@@ -1,84 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
+/* Importar tipografías elegantes y modernas */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap');
 
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+}
+
+body {
   background: #fdfcf9;
-  color: #3e3e3e;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   line-height: 1.6;
+  padding: 20px;
 }
 
-/* Contenedor principal */
-.invitation-card {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-/* Título principal */
-.invitation-card h1 {
+/* Títulos elegantes */
+h1, h2 {
   font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  color: #2c2c2c;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  color: #9c6b89;
+  margin-bottom: 15px;
 }
 
 /* Subtítulos */
-.invitation-card h2, 
-.invitation-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
+h3 {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
-  margin: 15px 0;
-  color: #444;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-/* Texto */
-.invitation-card p {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  margin: 8px 0;
+/* Texto normal */
+p, label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   color: #555;
+  margin-bottom: 12px;
 }
 
-/* Destacar ítems */
-.invitation-card .highlight {
-  color: #d2691e;
-  font-weight: bold;
+/* Sección de cuenta regresiva */
+.countdown {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
+  font-weight: bold;
+  color: #9c6b89;
+  margin: 20px 0;
 }
 
-/* Inputs */
-.invitation-card input,
-.invitation-card textarea {
-  width: 90%;
+/* Formulario */
+input, textarea {
+  width: 100%;
+  max-width: 400px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 8px auto;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-family: 'Playfair Display', serif;
 }
 
-/* Botón */
-.invitation-card button {
-  background: #7a4de3;
+button {
+  background: #9c6b89;
   color: #fff;
-  padding: 12px 25px;
   border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
   border-radius: 25px;
-  font-size: 1.1rem;
   cursor: pointer;
-  transition: 0.3s;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s ease;
 }
 
-.invitation-card button:hover {
-  background: #5d37b0;
+button:hover {
+  background: #7a526d;
 }
